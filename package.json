@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync-ui": "^2.26.4",
+    "gulp": "^4.0.2",
+    "jquery": "^1.12.4"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

@@ -1,0 +1,158 @@
+.content { width: 1200px; margin: 10px auto; }
+.banner a { width: 1200px; height: 120px; display: block; }
+.content_box { margin-top: 10px; }
+.left { float: left; background: #fff; width: 220px; }
+@mixin curr($color){
+    height: 40px; line-height: 40px; text-indent: 10px; color: #fff; background: $color;
+ }
+.gonggao { 
+    width: 190px; padding: 15px; border-bottom: solid 1px #d7d7d7;
+    h3 { 
+        @include curr(#dc7433) 
+    }
+    ul { 
+        padding: 10px 0 10px 0;
+        li{
+            a{ 
+                color: #dc7433; line-height: 28px;
+             }
+        }
+     }
+     div { 
+            border-top: solid 1px #eaeaea; padding-bottom: 15px;
+            a { 
+                color: #666666; display: block; padding-top: 12px; line-height: 18px;
+             }
+         }
+ }
+ .pifa { 
+     width: 190px; padding: 15px; border-bottom: solid 1px #d7d7d7;
+     h3 { 
+          @include curr(#ff2832)
+        }
+     ul { 
+          padding: 10px 0 10px 10px;
+          li{
+            a { 
+                line-height: 26px; color: #333333;
+                &:hover{ 
+                    color: #ff2832; text-decoration: underline;
+                 }
+             }
+          }  
+        }       
+    }
+    .ctservice {
+        p{ 
+            font-weight:bold;
+        } 
+    }
+.ctservicebtn a{
+    width:80px; height:30px; display:block; text-align:center; line-height:30px;   
+    color: #ff2832;
+    border: solid 1px #ff2832;
+    border-radius: 5px;
+    margin: 15px auto;
+} 
+.fenlei { 
+    width: 190px; padding: 15px; border-bottom: solid 1px #d7d7d7;
+    h3{
+        @include curr(#0080cc);
+        i{
+           font-size: 12px; font-style: initial; font-weight: 100; 
+        }
+    }
+    ul { 
+        padding: 10px 0 10px 0;
+        li{
+            a { 
+                line-height: 26px; font-size: 14px; color: #333333; padding-left: 15px; background: url(http://pifa.bookschina.com/Content/images/list-ico11.gif) left no-repeat;
+                &:hover{ 
+                    color: #0080cc; text-decoration: underline; padding-left: 15px; background: url(http://pifa.bookschina.com/Content/images/list-ico1.gif) left no-repeat;
+                 }
+             }
+        }
+     }
+}
+.right { float: right; width: 970px; }
+.huoban { 
+    border-top: 2px solid #ff2832; border-bottom: 1px solid #d7d7d7; padding-bottom: 15px; background: #fff;
+    h3 { height: 45px; line-height: 45px; color: #ff4149; font-size: 16px; text-indent: 15px; }
+}
+.huodong_box { width: 174px; float: left; margin-left: 16px; display: inline; display: inline; }
+.huodong_li { 
+    padding-bottom: 38px; background: url(http://pifa.bookschina.com/Content/images/icon-01.jpg) bottom no-repeat;
+    h6 { 
+        height: 30px; line-height: 30px; font-size: 14px; background: #ff2832; color: #fff; text-align: center;
+     }
+     .desc { 
+            width: 172px; height: 260px; border-left: 1px solid #dde1e4; border-right: 1px solid #dde1e4;
+            img { 
+                margin: 20px 0 0 45px; width:84px; height:84px;
+                }
+            p { 
+                font-size: 13px; color: #333333; background: url(http://pifa.bookschina.com/Content/images/list-ico2.gif) left no-repeat;
+             }
+        }
+    .msg_box { 
+        border-left: 1px solid #dde1e4; border-right: 1px solid #dde1e4;
+        a{ 
+            width:75px; height:22px; display:block; color:#ff2832; border:solid 1px #ff2832; text-align:center; line-height:22px;border-radius:5px; margin:0 auto;
+            &:hover{ 
+                background:#ffe9ea;
+            }
+        } 
+        p{
+            background:url(http://pifa.bookschina.com/Content/images/msg_bg.jpg) top no-repeat; width:132px; margin:15px auto 0 auto; padding:12px 0 10px 0; text-align:center; color:#999;line-height:18px;  
+        }
+    }
+ }
+@mixin hd ($left){
+    text-indent: 18px; 
+    margin-left: $left;
+    margin-top: 12px;
+}
+.hd01 p{
+    @include hd(36px)
+}
+.hd02 p{
+    @include hd(30px)
+}
+.hd03 p{
+    @include hd(30px)
+}
+.hd04 p{
+    @include hd(14px)
+}
+.hd05 p{
+    @include hd(20px)
+}
+.hd05 i { margin-left: 25px; font-style: normal; color: #999; }
+.book { 
+    width: 940px; background: #fff; padding: 0 15px 0 15px; margin-top: 10px; border-bottom: solid 1px #d8d8d8;
+    h3 { 
+        height: 45px; line-height: 45px; color: #ff4149; font-size: 16px; text-indent: 15px; border-bottom: 1px solid #ff4149;
+     }
+    ul { 
+        padding: 20px 0;
+        li { 
+            width: 170px; float: left; margin-left: 21px; display: inline;
+            img { 
+                max-width: 158px; max-height: 158px; padding: 5px;
+             }
+            p { 
+                 text-align: center; padding-top: 8px; height: 15px; line-height: 15px; overflow: hidden;
+                 }
+         }
+     }
+ }
+ .bookcover { 
+     display: block; width: 168px; height: 168px; border: solid 1px #efefef; text-align: center;
+ }
+ .booksee { 
+     background: #ff2732; width: 170px; height: 26px; text-align: center; line-height: 26px; color: #fff; display: block; margin-top: 10px;
+     }
+.booksee:hover { 
+    background: #8f8f8f; color: #fff;
+ }
+

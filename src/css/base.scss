@@ -1,0 +1,90 @@
+body { margin: 0; padding: 0; font-size: 12px; font-family: 宋体, Arial, Helvetica, sans-serif; color: #333; background: #f4f4f4; }
+form, ul, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd { margin: 0; padding: 0; list-style: none; }
+input, select, button { font-size: 12px; outline: none; }
+img { border: 0px; }
+.clearfix:after { content: "&nbsp;"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { *display: inline-block; }
+.fl { float: left; }
+.fr { float: right; }
+a { color: #6b6b6b; text-decoration: none; outline: none; -webkit-transition: color .4s ease; -moz-transition: color .4s ease; -o-transition: color .4s ease; transition: color .4s ease; }
+a:hover { color: #0094ff; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: #cccccc; }
+
+/* nav */
+.nav { width: 100%; height: 90px; background: url(http://pifa.bookschina.com/Content/images/top_bg.gif); }
+.nav_box { width: 1200px; margin: 0 auto; }
+.logo { display: block; width: 185px; height: 50px; float: left; margin-top: 20px; display: inline; }
+.nav_list { 
+    float: left; padding: 40px 0 0 20px; display: inline;
+    a { 
+        display: block; padding: 5px 20px; margin-left: 30px; border-radius: 4px; font-size: 15px; font-weight: bold; color: #fff; float: left; font-family: 'Microsoft YaHei'; 
+        &.cur{
+            background: #ffe585; color: #ff2832;
+        }
+    }
+ }
+.nav_more { 
+    float: right; padding-top: 18px;
+    a, a.span,a.i{
+        float: right; color: #fff; padding: 0 14px 0 14px; font-style: initial; background: url(http://pifa.bookschina.com/Content/images/nav-icon.png?v=1.0) left no-repeat; 
+    }
+    a.cur{
+        color: #fdf578;
+    }
+    a.bgnone,span.bgnone{
+        background: none;
+    }
+    a.pdnone { 
+        padding-right: 0;
+     }
+ }
+/* foot */
+.footer { width: 100%; height: 80px; background: #333333; }
+.footer_box { 
+    width: 1200px; margin: 0 auto;
+    p{
+        float: right; padding-top: 10px; text-align: right; display: inline; line-height: 28px; color: #fff;
+        a,span{
+            color: #fff; padding-left: 15px; 
+        } 
+    }
+ }
+.chengxin { float: left; margin: 18px 15px 0 0; display: inline; width: 114px; height: 41px; display: block; background: url(http://pifa.bookschina.com/Content/images/chengxin.jpg) no-repeat; border-radius: 3px; }
+.ectrust { float: left; margin: 18px 0 0 0; display: inline; width: 156px; height: 46px; display: block; background: url(http://pifa.bookschina.com/Content/images/ectrust.gif) no-repeat; border-radius: 3px; }
+/* QQ客服 */
+*{ margin: 0; padding: 0; list-style: none; }
+img { border: 0; }
+.cusSer { 
+    position: absolute; right: 0; top: 150px;
+    .cusSerIn { 
+        position: relative; padding-left: 24px;
+     }
+    .slide_min { 
+        width: 24px; font-family: SimHei; font-size: 14px; height: 64px; cursor: pointer; text-align: center; background: #f60000 url(http://image31.bookschina.com/pro-images/qqkefu/kefu.png) no-repeat center 5px; color: #fff; padding-top: 24px; line-height: 15px; border-radius: 5px 0 0 5px; position: absolute; left: 0; top: 50%; margin-top: -44px;
+     }
+    .slide_box { 
+        width: 114px; border: 1px solid #e1e1e1; font-size: 12px; line-height: 32px;
+        li { 
+            border-bottom: 1px solid #e1e1e1; line-height: 32px; background: url(http://image31.bookschina.com/pro-images/qqkefu/default.png) no-repeat 5px 7px;
+            .pifaArea { 
+                display: none; color: #666666; padding-left: 28px; line-height: 18px; overflow: hidden; padding-bottom: 1px; margin-top: -7px;
+                span { 
+                    float: left; display: inline; margin-right: 7px;
+                 }
+             }
+             a { 
+                 color: #333333; text-decoration: none; display: block; height: 32px; padding-left: 28px;
+                 &:hover { 
+                     color: #f60000; 
+                    }
+                 }
+            &.offline { 
+                background: url(http://image31.bookschina.com/pro-images/qqkefu/hoverdefault.png) no-repeat 5px center;
+                a{
+                    color: #999
+                }
+             }
+         }
+     }
+ }
