@@ -1,0 +1,1193 @@
+@mixin position($width){
+    width: $width;
+    position: absolute;
+    left: 50%;
+    margin-left: -$width/2;
+}
+/* 顶部banner图 */ 
+.topBanner{
+    height: 100px;
+    background: #d6f8fd;
+    position: relative;
+    .smallBanner{
+        height: 100px;
+        @include position(1200px)
+
+    }
+}
+/* 工具栏 */
+.topBar{
+    position: relative;
+    background: #f2f2f2;
+    height: 31px;
+    font-size: 12px;
+    color: #666;
+    .toolbar{
+        height: 31px;
+        line-height: 30px;
+       @include position(1200px);
+       .toolbarLeft{
+        float: left;
+        span{
+            color: #d1d1d1;
+            margin:0 7px;
+        }
+        a{
+            color: #e60000;  
+        }
+       }
+       .toolbarRight{
+        float: right;
+        ul li{
+            position: relative;
+            float: left;
+            margin: 0 16px;
+            .dropLayer{
+                display: none;
+                width: 162px;
+                position: absolute;
+                top: 29px;
+                left: -14px;
+                border: 1px solid #dadada;
+                background: #fff;
+                padding-left: 12px;
+                z-index: 2;
+                box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+                a{
+                    float: left;
+                    color: #666;
+                    display: block;
+                    width: 76px;
+                    line-height: 24px;
+                    margin-bottom: 6px;
+                    &:hover{
+                        color: #666;
+                    }
+
+                }
+              .erweimaWrap{
+                padding-top: 9px;
+                overflow: hidden;
+                .erweima{
+                    float: left;
+                    width: 75px;
+                    height: 75px;
+                }
+                .text{
+                    b{
+                    color: #e60000;
+                    display: block;
+                    margin-top: 5px;
+                    }
+                    span{
+                        color: #666;
+                        display: block;
+                        padding-top: 9px;
+                        line-height: 14px;
+                    }
+                }
+              }  
+            }
+        }
+       }
+    }
+}
+/* 搜索区域 */
+.searchBar{
+    height: 100px;
+    float: left;
+    .searchBarFixed{
+        @include position(1200px);
+        height: 100px;
+        .logo{
+            float: left;
+            a{
+                display: block;
+                width: 248px;
+                padding: 21px 0 25px 0;
+                margin-right: 26px;
+            }
+        }
+        .searchArea{
+            float: left;
+            margin-top: 20px;
+           .clearfix{
+               .searchInput{
+                   float: left;
+                   width: 606px;
+                   border: 2px solid #e60000;
+                   position: relative;
+                   .inputWarp{
+                       width: 508px;
+                       input{
+                           height: 36px;
+                           display: block;
+                           width: 100%;
+                           float:left;
+                           line-height: 36px;
+                           text-indent: 1em;
+                           color: #666;
+                           font-size: 12px;
+                       }
+                   }
+                   .dropSearch{
+                       a{
+                        background: #e60000;
+                        display: block;
+                        text-align: center;
+                        line-height: 36px;
+                        font-size: 14px;
+                        color: #fff;
+                        letter-spacing: 3px;
+                        height: 38px;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                       }
+                       float: left;
+                       width: 98px;
+                       position: relative;
+                     ul {
+                        height: 38px;
+                        border-left: 1px #dbdbdb solid;
+                        position: absolute;
+                        top: 0;
+                        right: 98px;
+                         li{
+                            a{
+                            font-size: 12px;
+                            display: block;
+                            height: 36px;
+                            padding: 0 9px;
+                            background: #fff;
+                            width: 63px;
+                            color: #999;
+                            letter-spacing: 0;
+                            }
+                         }
+                     }
+                   }
+               }
+               .moreSearch{
+                   float: left;
+                   line-height: 40px;
+                   margin-left: 15px;
+                   a{
+                       color: #e60000
+                   }
+               }
+           }
+           .hotWord{
+               line-height: 28px;
+               overflow: hidden;
+               a{
+                   float: left;
+                   margin-right: 25px;
+                   color: #999;
+                   &:hover{
+                       color: #e60000;
+                       text-decoration: none;
+                   }
+               }
+           } 
+        }
+        .notice{
+            width: 135px;
+            margin: 25px 25px 0 0;
+            padding:0 0 0 33px;
+            position: relative;
+            float: right;
+            .noticePanel{
+                float: left;
+                height: 40px;
+                overflow: hidden;
+                position: relative;
+                .tempWrap{
+                    height: 40px;
+                    position: relative;
+                    overflow: hidden;
+                    ul{
+                        height:200px;
+                        position: relative;
+                        padding: 0;
+                        margin: 0;
+                        li{
+                            height: 40px;
+                            display: table;
+                            overflow: hidden;
+                            a{
+                                display: table-cell;
+                                vertical-align: middle;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                                text-decoration: none;
+                                font-family: "Microsoft YaHei";
+                            }
+                        }
+                    }
+                }
+            }
+            span{
+                position: absolute;
+                width: 23px;
+                height:23px;
+                left: 0;
+                top: 50%;
+                margin-top: -13px;
+                font-size: 23px;
+                color: #e60000; 
+            }
+        }
+    }
+}
+/* 导航 */
+.nav{
+    .w1200{
+        width: 1200px;
+        margin: auto;
+    border-bottom: 2px solid #e60000;
+    position: relative;
+    .navBar{
+        height: 42px;
+        @include position(1200px);
+        position: relative;
+        background: pink;
+        .navbarLeft{
+            float: left;
+            height: 42px;
+            width: 200px;
+            background: #e60000;
+            cursor: pointer;
+            span,h2{
+                font-size: 16px;
+                color:#fff;
+                float: left;
+                line-height: 42px;
+                font-family: "Microsoft YaHei";
+                font-weight: normal;
+            }
+            span:nth-of-type(1){
+                margin: 0 10px;
+            }
+            span:nth-of-type(2){
+                float: right;
+                margin-right: 20px;
+            }
+        }
+        .navbarRight{
+            float: left;
+            width: 1000px;
+            height: 42px;
+            background: #ccc;
+            ul{
+                li{
+                    float: left;
+                    padding:0 24px;
+                    a{  
+                        display: block;
+                        height: 42px;
+                        line-height: 42px;
+                        color: #333;
+                        font-size: 18px;
+                        font-family: "Microsoft YaHei";
+                        text-decoration: none;
+                        &:hover{
+                            color: #e60000;
+                        }
+                    }
+                }
+                li:nth-of-type(4){
+                    span{
+                        font-size: 16px;
+                        color: rgb(255,156,0);
+                    }
+                    a{
+                        display: inline-block;
+                    }
+                }
+                li:nth-of-type(1){
+                    a{
+                        color: #e60000;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .category{
+        position: absolute;
+        top: 42px;
+        left: 0px;
+        z-index: 112;
+        width: 200px;
+        height: 696px;
+
+    .categoryInner{   //包裹ul的盒子
+        width: 198px;
+        height: 702.67px;
+        background: #fff;
+        border: 1px solid #e60000;
+
+        .category-list{//列表框
+            .js_toggle{//内容
+            padding-top: 2px;
+            background:url(../img/navline.jpg) no-repeat bottom center;
+            padding-bottom: 2px;
+            border-left: 2px solid #fff;
+            border-right: none;
+            position: relative;
+            z-index: 113;
+             vertical-align: bottom;
+
+                .category-info{//文学的盒子
+                    padding-left: 11px;
+                    .category-name{
+                        padding-top:8px;
+                        .ml-22{
+                            font-size: 16px;
+                            color: red;
+                        }
+                    }
+                    .c-category-list{//文学盒子
+                        position: relative;
+                        margin-top: 7px;
+                        line-height: 24px;
+                        padding-bottom: 10px;
+                        overflow: hidden;
+                        margin-right: 11px;
+                        a{
+                            margin-right: 12px;
+                            color: #666;
+                            text-decoration: none;
+                            white-space: nowrap;
+                            line-height: 24px;
+                            &:hover{
+                                color: #e60000
+                            }
+                        }
+                    }
+
+                }
+                .menu-item{
+                   
+                    position: absolute;
+                    // z-index: 11;
+                    left: 190px;
+                    width: 757px;
+                    background: #fff;
+                    border: none;
+                    border-top: 1px solid #00b6f0;
+                    // zoom: 1;
+                    border: 2px solid #e60000;
+                    background: #fff;
+                    left: 197px;
+                    .area-bg{
+                        padding: 10px 0 10px 16px;
+                        .sublist{
+                            padding-right: 32px;
+                            li{
+                                overflow: hidden;
+                                padding: 9px 0;
+                                border-bottom: 1px solid #f0f0f0;
+                                &:last-child{
+                                    border-bottom: none;
+                                }
+                                .mcate-item-hd{
+                                    font-size: 12px;
+                                    float: left;
+                                    width: 85px;
+                                    line-height: 24px;
+                                    a{
+                                        font-size: 12px;
+                                        color: #e60000;
+                                        text-decoration: none;
+                                    }
+                                }
+                                .mcate-item-bd{
+                                    float: left;
+                                    width: 600px;
+                                    overflow: hidden;
+                                    line-height: 24px;
+                                    overflow: hidden;
+                                    a{
+                                        text-decoration: none;
+                                        float: left;
+                                        color: #666666;
+                                        margin: 0 16px;
+                                        // white-space: nowrap;
+                                        &:hover{
+                                            color: #e60000;
+                                        }
+                                    }
+                                    span{
+                                        float: left;
+                                         color: #d6d6d6;
+                                    }
+                                }
+                            }
+                        }
+                        // .clearfix{
+                        //     // zoom: 1;
+                        //     display: block;
+                        // }
+                    }
+                }
+
+
+
+            }
+            .hover{
+                border: 1px red solid;
+                border-right: none;
+            }
+        }
+        .all-category{
+            text-align: right;
+            padding-right: 12px;
+                line-height: 21px;
+        }
+  
+    }
+    .minNav{
+        border: 1px solid #c8c8c8;
+        width: 198px;
+        height: 174px;
+        margin-top: 10px;
+        overflow: hidden;   
+        h4{
+            background: url(http://www.bookschina.com/Images/Head/shu_icon.png) no-repeat 14px;
+            font-family: 'Microsoft YaHei';
+            font-size: 16px;
+            padding-left: 14px;
+            text-indent: 24px;
+            height: 42px;
+            line-height: 42px;
+            border-bottom: 1px solid #eaeaea;
+            color: #e60000;
+            font-weight: 100; 
+        }
+        a{
+            position: relative;
+            display: block;
+            height: 32px;
+            line-height: 32px;
+            color: #666;
+            text-decoration: none;
+            white-space: nowrap;
+            text-indent: 14px;
+            border-bottom: 1px solid #eaeaea;
+        }
+    }
+    }
+}
+}
+/*主体*/
+/*网站通栏 banner*/
+.bannerWrap{
+    .w1200{
+        width: 1200px;
+        margin: auto;
+        // background:pink;
+        .banner{
+           margin:10px 0 0 210px;
+           position: relative;
+           height: 360px;
+           width: 990px;
+           overflow: hidden; 
+        //    background: pink;
+           .bannerList{
+            height: 360px;
+            width: 987px;
+            overflow: hidden; 
+           }
+           .bannerdot{
+               position: absolute;
+               bottom: 0;
+               width: 100%;
+               left: 0;
+               a {
+                float: left;
+                width: 141px;
+                padding: 3px 0;
+                text-align: center;
+                height: 40px;
+                color: #fff;
+                cursor: pointer;
+                line-height: 40px;
+                display: table;                    
+                background:rgba(0,0,0,0.7);
+                text-decoration: none; 
+                                 
+                span{
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding: 0 10px;
+                }                   
+            }
+            .bg{
+                background: red
+            } 
+           }
+           .arrowL{
+            width: 30px;
+            height: 40px;
+            background-color:  rgba(0,0,0,0.2);
+            position: absolute;
+             left: 0;
+             top: 50%;
+             margin-top: -19px;
+             cursor: pointer;
+             display: none;
+             text-align: center;
+             line-height: 40px;
+             .leftArrow{
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+              }
+          }
+          .arrowR{
+            width: 30px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+             right: 0;
+             top: 50%;
+             margin-top: -19px;
+             cursor: pointer;
+             display: none;
+             text-align: center;
+              line-height: 40px;
+              .rightArrow{
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+              }
+          }
+        }
+    }
+}   
+/*畅销榜 */    
+.hotBookWrap{
+    position: relative;
+    z-index: 6;
+    .w1200{
+        width: 1200px;
+        margin: auto;
+        .hotbookinner {
+            margin: 10px 0 0 210px;
+            width: 990px;
+            .hotBook {
+                float: left;
+                width: 730px;
+                height: 490px;
+                background: #eff2fa;
+                // background: #e70b1c;
+                padding: 10px;
+                overflow: hidden;
+                .tabTit{
+                    overflow: hidden;
+                    width: 730px;
+                    height: 40px;
+                    // background: blue;
+                    a {
+                        cursor: default;
+                        float: left;
+                        border-top: 3px solid #eff2fa;
+                        color: #333333;
+                        font-family: "Microsoft YaHei";
+                        font-size: 16px;
+                        height: 37px;
+                        line-height: 30px;
+                        padding: 0 25px;
+                        text-decoration: none;
+                    }
+                    .cur{
+                        border-top: 3px solid #e60000;
+                        color: #e60000;
+                        background: #fff;
+                        font-weight: bold;
+                    }
+                }
+                .tabCon{
+                    width: 730px;
+                    height: 450px;
+                    background: #fff;
+                    // background: pink;                    
+                    .tabConList{
+                        position: relative;
+                        display: block;
+                        .mainEditor{
+                            overflow: hidden;
+                            .mainEditorTop{
+                                padding: 15px 15px 0;
+                                height: 174px;
+                                border-bottom: 1px solid #eef1f9;
+                                // background: green;
+                                .mainCover{
+                                    float: left;
+                                    height: 160px;
+                                    width: 189px;
+                                    text-align: center;
+                                    display: inline;
+                                    position: relative;
+                                    a{
+                                      display: block;
+                                      height: 160px;
+                                      background: #fff;
+                                      img{
+                                        max-height: 160px;
+                                        max-width: 160px;
+                                      }  
+                                    }
+                                }
+                                .mainText{
+                                    float: left;
+                                    width: 495px;
+                                    display: inline;
+                                    overflow: hidden;
+                                    h2{
+                                        margin-top: 10px;
+                                        line-height: 30px;
+                                    }
+                                    .priceWrap{
+                                        overflow: hidden;
+                                        line-height: 30px;
+                                        .sellPrice{
+                                            color: red;
+                                            float: left;
+                                            font-size: 18px;
+                                        }
+                                        .price{
+                                                color: #999999;
+                                                margin-left: 11px;
+                                                text-decoration-line: line-through;
+                                                float: left;
+                                                font-size: 18px;
+                                        }
+                                    }
+                                    .mainFont{
+                                        height: 96px;
+                                        overflow: hidden;
+                                        p{
+                                            color: #666;
+                                            line-height: 24px;
+                                            margin-top: 1px;text-indent: 2em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tabBook{
+                            padding: 0 1px;
+                            margin-top: 10px;
+                            .clearFix{
+                                overflow: hidden;
+                                zoom: 1;
+                                display: block;
+                                li{
+                                    float: left;
+                                    width: 182px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    .Img{
+                                        text-align: center;
+                                        margin-top: 7px;
+                                        height: 158px;
+                                        img{
+                                            max-width: 158px;
+                                            max-height: 158px;
+                                        }
+                                    }
+                                    .name{
+                                        padding: 10px 15px 0;
+                                        line-height: 18px;
+                                        height: 36px;
+                                        overflow: hidden;
+                                        a{
+                                            font-size: 12px;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                    .priceWrap{
+                                        overflow: hidden;
+                                        line-height: 20px;
+                                        padding: 4px 15px 15px 15px;
+                                        .sellPrice{
+                                            color: red;
+                                            float: left;
+                                            font-size: 16px;
+                                        }
+                                        .price{
+                                            color: #999999;
+                                            margin-left: 11px;
+                                            text-decoration-line: line-through;
+                                            float: left;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .cur{
+                        display: block;
+                    }
+                }
+            }  
+            .hotSale{
+                float: right;
+                width: 230px;
+                height: 510px;
+                background: #f0f0f0;
+                // background: pink;
+                .hotTitle{
+                    line-height: 32px;
+                    height: 32px;
+                    overflow: hidden;
+                    background: #fff;
+                    // background: #666;
+                    h2{
+                        float: left;
+                        font-size: 16px;
+                        color:red;
+                        font-weight: bold;
+                    }
+                    a{
+                        float: right;
+                        color: #999999;
+                    }
+                }
+                .hotNav{
+                    font-size: 12px;
+                    position: relative;
+                    background: #fff;
+                    .navDot {
+                        overflow: hidden;
+                        height: 36px;
+                        border-right: 1px solid #e6e6e6;
+                        position: relative;
+                        cursor: pointer;
+                        ul{
+                            overflow: hidden;
+                            width: 560px;
+                            position: absolute;
+                            top: 0;
+                            li {
+                                float: left;
+                                width: 56px;
+                                height: 34px;
+                                display: inline;
+                                border: 1px solid #e6e6e6;
+                                border-right: none;
+                                line-height: 34px;
+                                text-align: center;
+                                color: #666;
+                            }
+                            .cur {
+                                border-top: 2px solid red;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+                .hotCon{
+                    border: 1px solid #eaeaea;
+                    border-top: none;
+                    border-bottom: none;
+                    overflow: hidden;
+                    background: #fff;
+                    // background: green;
+                    height: 422px;
+                    .on{
+                        display: block;
+                    }
+                    ul{
+                      display: none;
+                      .red{
+                          i{
+                              color: red;
+                          }
+                      }
+                      .cur{
+                          p,em{
+                            display: none;
+                          }
+                          .bookCur{
+                              display: block;
+                          }
+
+                        }
+                       li{
+                           position: relative;
+                           border-bottom: 1px solid #ccc;
+                           i {
+                            position: absolute;
+                            height: 32px;
+                            line-height: 32px;
+                            font-size: 14px;
+                            font-family: 'Microsoft YaHei';
+                            width: 40px;
+                            text-align: center;
+                            top: 0;
+                        }
+                        em{
+                            position: absolute;
+                            font-size: 9px;
+                            color: #7a7a7a;
+                            height: 32px;
+                            line-height: 32px;
+                            right: 10px;
+                            top: 0;
+                        }
+                        p {
+                            height: 34px;
+                            line-height: 34px;
+                            color: #333333;
+                            text-indent: 44px;
+                            padding-right: 35px;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+                        .bookCur {
+                            // display: block;
+                            display: none;
+                            overflow: hidden;
+                            padding: 10px 0px 11px;
+                            .bPic {
+                                float: left;
+                                width: 85px;
+                                height: 85px;
+                                margin-left: 35px;
+                                display: inline;
+                                text-align: center;
+                                img {
+                                    max-width: 85px;
+                                    max-height: 85px;
+                                }
+                            }
+                            .bDetail {
+                                float: left;
+                                width: 100px;
+                                overflow: hidden;
+                                .bName {
+                                    margin-top: 8px;
+                                    line-height: 22px;
+                                    height: 44px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    a {
+                                        display: block;
+                                        height: 44px;
+                                        text-decoration: none;
+                                        color: #333;
+                                        font-size: 12px;
+                                        overflow: hidden;
+                                    }
+                                }
+                                .bPrice {
+                                    overflow: hidden;
+                                    margin-top: 3px;
+                                    .sellPrice {
+                                        float: left;
+                                        color: red;        
+                                    }
+                                    .price {
+                                        float: left;
+                                        color: #999999;
+                                        text-decoration-line: line-through;
+                                        margin-left: 3px;
+                                    }
+                                }
+                            }
+                        }
+                       } 
+                    }
+                }
+                .moreSale{
+                    text-align: right;
+                    line-height: 20px;
+                    padding-right: 10px;
+                    a{
+                        font-size: 12px;
+                        color: #666;
+                    }
+                }
+            }  
+        }
+    }
+}
+/*专题插入广告*/
+.hotSubject{
+    padding-top: 20px;
+    .w1200{
+        width: 1200px;
+        margin: auto;
+        
+        a{
+            float: left;
+            margin-left: 5px;
+        }
+    }
+}
+/*淘书团热销*/
+.tstWrap{
+    margin-top: 15px;
+    .w1200{
+        width: 1200px;
+        margin: auto;
+        // background: yellowgreen;
+        .tst{
+            .tstTit{
+                overflow: hidden;
+                border-bottom:3px solid #e60000; 
+                h2{
+                    float: left;
+                    line-height: 61px;
+                    font-style: oblique;
+                    a{
+                        color: #e60000;
+                        overflow: hidden;
+                        font-size: 22px;
+                    } 
+                    span{
+                        color: #333333;
+                        margin-left: 10px;
+                        font-size: 18px;
+                        font-style: oblique;
+                    }
+                }
+                a.more{
+                    float: right;
+                    height: 58px;
+                    line-height: 58px;
+                    font-size:14px;
+                    padding-right: 20px;
+                }
+
+            }
+            .tstCon{
+                .tstConInner{
+                    .tstList{
+                        position: relative;
+                        width: 1200px;
+                        height: 300px;
+                        overflow: hidden;
+                        margin-top: 14px;
+                        ul{
+                            width: 2440px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        ul li{
+                            float: left;
+                            width: 285px;
+                            margin-right: 17px;
+                            height: 298px;
+                            border: 1px solid #e6e6e6;
+                            .bookCover{
+                                height: 190px;
+                                img{
+                                    width: 285px;
+                                    height: 190px;
+                                }
+                            }
+                            p{
+                                height: 66px;
+                                overflow: hidden;
+                                margin-top: 7px;
+                                padding: 0 14px;
+                                line-height: 22px;
+                            }
+                            .priceWrap{
+                                padding: 0 14px;
+                                span{
+                                    float: left;
+                                    color: #e60000;
+                                    font-size: 20px;
+                                }
+                                del{
+                                    float: left;
+                                    margin-left: 13px;
+                                    color: #999;
+                                    line-height: 28px;
+                                }
+                                em{
+                                    float: right;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    background: #5bd7ff;
+                                    color: #fff;
+                                    padding: 0 5px;
+                                    margin-top: 5px;
+                                    border-radius: 3px;
+                                }
+                            }
+
+                        }
+                        span.xleftArrow{
+                            width: 27px;
+                            height: 38px;
+                            position: absolute;
+                            line-height: 38px;
+                            text-align: center;
+                            top: 85px;
+                            left: 2px;
+                            display: none;
+                            background-color:rgba(0, 0, 0, 0.35);
+                            
+                        }
+                        span.reghtArrow{
+                            background-color:rgba(0,0,0,0.35);
+                            line-height: 38px;
+                            text-align: center;
+                            width: 27px;
+                            height: 38px;
+                            position: absolute;
+                            top: 85px;
+                            right: 2px;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 楼层 */
+.kindFloor { margin-top: 25px; 
+    .w1200 { width: 1200px; margin: auto;
+        .floorTit { position: relative; background: #f5f5f5; 
+            h2 { float: left; height: 55px; width: 210px; line-height: 55px; text-indent: 16px; background: #00b6f0; 
+                a { display: block; height: 55px; text-decoration: none; font-size: 22px; color: #fff; font-family: "黑体"; }
+            }
+            ul {
+                overflow: hidden; float: left; 
+                li { 
+                    float: left; padding: 0 19px; background: url('http://www.bookschina.com/Images/kindline.jpg') no-repeat right; 
+                    a { 
+                        padding: 0 7px; padding-top: 8px; font-size: 15px; color: #333333; text-decoration: none; display: block; line-height: 32px; height: 43px; border-top: 4px solid #f5f5f5; 
+                    }
+                }
+                li.cur{
+                    a { border-top: 4px solid #00b6f0; color: #03a7db; }
+                }
+            }
+        }
+    }
+}
+.floorCon { margin-top: 10px; 
+    .floorLeft { float: left; width: 960px; 
+        .floorTabItem { display: none; 
+            .floorTabLeft { float: left; width: 210px; }
+            .floorTabRight { float: right; width: 740px; 
+                .floorTabRightInner { position: relative; }
+                .kindmore { position: absolute; right: 0; top: 50%; position: absolute; background: #bdeefe; margin-top: -34px; display: none; 
+                    a { display: block; width: 14px; text-align: center; padding: 8px; color: #00b6f0; text-decoration: none; }
+                }
+                .floorTabRightInner:hover{
+                    .kindmore { display: block; }
+                }
+            }
+        }
+        .floorTabItem.cur { display: block; }
+        
+    }
+}
+.tabBanner { position: relative; 
+    .bannerWrap { position: relative; height: 334px; overflow: hidden; 
+        ul { position: absolute; left: 0; right: 0; width: 630px; 
+            li { height: 334px; overflow: hidden; float: left; width: 210px; position: relative; 
+                h2 { text-align: center; font-family: 'Microsoft YaHei'; position: absolute; height: 30px; line-height: 30px; top: 25px; left: 16px; width: 178px; background: #fff; 
+                    a { color: #0080cc; text-decoration: none; font-size: 16px; }
+                }
+                p { position: absolute; line-height: 20px; width: 178px; left: 16px; color: #fff; top: 67px; }
+            }
+        }
+    }
+}
+.floorTabLeft{
+    .kindText { background: #bdeefe; padding: 0 15px; margin-top: 1px; height: 195px; overflow: hidden;
+        h3 { color: #0080cc; margin-top: 14px; font-size: 16px; font-weight: normal; line-height: 30px;
+            a { color: #0080cc; }
+        }
+        ul { margin-top: 7px; 
+            li { line-height: 26px; height: 26px; width: 180px; overflow: hidden; position: relative; 
+                a { color: #666; text-decoration: none; padding-left: 12px; }
+                a:hover { color: #07a1d2; }
+                span { top: 0; position: absolute; left: 0px; font-size: 9px; color: #82888a; }
+            }
+            li:hover{
+                span { color: #07a1d2; }
+            }
+        }
+    }
+} 
+.floorTabRight{
+    ul { overflow: hidden; 
+        li { float: left; width: 185px; height: 266px; position: relative; 
+            .booKimg { height: 158px; margin-top: 10px; text-align: center; 
+                a { display: block; }
+                img { max-height: 158px; max-width: 158px; }
+            }
+            .bookName { width: 145px; padding: 0 20px; line-height: 18px; height: 18px; overflow: hidden; margin-top: 15px; 
+                a { font-size: 12px; font-weight: 400; color: #333; text-decoration: none; }
+                a:hover { color: #e60000; }
+            }
+            .bookAuthor { margin-top: 4px; color: #666; width: 145px; padding: 0 20px; line-height: 18px; height: 18px; overflow: hidden; }
+            .priceWrap { margin-top: 5px; width: 145px; padding: 0 20px; overflow: hidden; line-height: 16px; 
+                .salePrice { float: left; color: #e60000; font-size: 15px; font-family: "Microsoft YaHei"; }
+                .price { line-height: 18px; margin-left: 7px; float: left; color: #999999; text-decoration-line: line-through; }
+            }
+        }
+    }
+} 
+.floorTabRight ul li .icon { position: absolute; top: 0; right: 0; 
+    img { width: 100%; }
+}
+.floorCon{
+    .floorRight { width: 230px; float: right; }
+} 
+.seriesBook{
+    ul { border: 1px solid #e6e6e6; border-bottom: none; 
+        li { border-bottom: 1px solid #e6e6e6; position: relative; line-height: 0; 
+            .img { display: none; }
+            .text { display: block; height: 32px; line-height: 32px; padding-left: 32px; width: 185px; overflow: hidden; color: #333; text-decoration: none; }
+            span { position: absolute; font-size: 8px; height: 32px; line-height: 32px; top: 0; left: 13px; line-height: 42px; }
+        }
+        li.cur{
+            .img { display: block; width: 228px; height: 90px; overflow: hidden; } 
+            .text { display: none; }
+            span { display: none; }
+        }
+    }
+} 
+.floorSubImg { margin-top: 20px; }
+#floor2{
+    .floorTit{
+        h2 { background: #b17f4a; }
+        ul{
+            li.cur{
+                a { border-top: 4px solid #b17f4a; color: #b17f4a; }
+            }
+        }
+    } 
+    .floorTabLeft{
+        .kindText { background: #ffebd3; 
+            h3 { color: #b17f4a; 
+                a { color: #b17f4a; }
+            }
+            ul{
+                li{
+                    a:hover { color: #b17f4a; }
+                }
+                li:hover{
+                    span { color: #b17f4a; }
+                }
+            }
+        }
+    }
+} 

@@ -22,7 +22,7 @@ gulp.task('js',function(done){
 //压缩css,sass
 //sass:css的预处理,它可以定义变量,嵌套,混写等操作
 gulp.task('css',function(done){
-	// gulp.src('./src/css/*.css')
+	gulp.src('./src/css/*.css')
 	// .pipe(loader.minifyCss())
 	// .pipe(gulp.dest('./dist/css/'));
 
@@ -47,14 +47,20 @@ gulp.task('img',function(done){
 	.pipe(gulp.dest('./dist/img/'))
 	done()
 })
+//把json放到dist里面去
+gulp.task('json',function(done){
+	gulp.src('./src/json/*.json')
+	.pipe(gulp.dest('./dist/json/'))
+	done()
+})
 //合并前面的任务,并刷新页面
-gulp.task('minify',gulp.series(gulp.parallel('js','html','css','lib','img'),function(done){
+gulp.task('minify',gulp.series(gulp.parallel('js','html','css','lib','img','json'),function(done){
 	//刷新页面
 	browser.reload()
 	done()
 }))
 //开启web服务器
-gulp.task('default',gulp.series(gulp.parallel('js','html','css','img','lib'),function(done){
+gulp.task('default',gulp.series(gulp.parallel('js','html','css','img','lib','json'),function(done){
 	browser.init({
 		server:'./dist/',
 		port:80

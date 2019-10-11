@@ -1,0 +1,130 @@
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./lib/jquery1.12.4.min.js"></script>
+    <script src="./js/register.js"></script>
+</head>
+<body style="background: #f6f4f5;">
+    <div id="top"><!--头部  -->
+        <div class="top-con">
+        <img src="http://www.bookschina.com/shopcar/images/logo5.jpg" alt="" class="img1">
+       <span class="yuan">✓</span>
+       <p class="books">正版好图书</p>
+       <span class="yuan1">✓</span>
+       <p class="books1">全场满69元包邮</p>
+       <span class="yuan2">✓</span>
+       <p class="books2">特价书一折起</p>
+        </div>
+    </div>
+
+
+    <div id="zj"><!-- 中间部分 -->
+        <div class="zj-con">
+            <div class="registerForm"><!-- 中间的盒子 -->
+                <div class="registerTitle"><!-- 新用户注册-->
+                    <b>新用户注册</b>
+                    <span>新用户专享：19减5优惠券（全场通用淘书团除外）</span>
+                    <div class="logins">
+                        "已有账号？"
+                         <a href="./login.html">请登录</a>
+                    </div>
+                </div>
+            <div class="registerInputWrap"><!-- 输入框 -->
+                 <!-- 手机号码-->
+                <div class="inputBox">
+                <div class="box1" >
+                    <span>手机号码：</span>
+                    <input type="text" placeholder=" 请输入您的常用手机号码" id="tel">
+                </div>
+                <div class="tips" ><!-- 错误提示 -->
+                    <!-- <span>请输入您的常用手机号码</span>
+                     -->
+                     <span id="tip1"></span>
+                </div>
+            </div> 
+             <!-- 设置密码-->
+                <div class="inputBox">
+                <div class="box2">
+                        <span>设置密码：</span>
+                        <input type="password" placeholder=" 请输入密码" id="passW"> 
+                    </div>
+                    <div class="tips"><!-- 错误提示 -->
+                        <!-- <span>请设置6到16位登录密码</span>
+                         -->
+                        <span id="tip2"> </span>
+                    </div>
+                    </div>
+                      <!-- 确认密码-->
+                    <div class="inputBox">  
+                <div class="box3">
+                        <span>确认密码：</span>
+                        <input type="password" placeholder=" 请再次输入密码" id="confirmP">
+                    </div>
+                    <div class="tips"><!-- 错误提示 -->
+                        <!-- <span>请再次输入密码</span> -->
+                        <span id="tip3"> </span>
+                    </div>
+                </div>
+                 <!-- 验证码-->
+                <div class="inputBox"> 
+                <div class="box4">
+                        <span class="kkk">验证码：</span>
+                        <input type="text" placeholder="请输入验证码" id="yzm" style="display: inline-block"><!-- 验证码输入框-->
+                        <span  class='yz' id="yzmName" style="display: inline-block" ></span><!-- 验证码显示框-->
+                        <a href="javaScript:;" class="chance1" id="look"
+                        >换一换</a><!-- 切换验证码-->
+                    </div>  
+                    <div class="tips"><!-- 错误提示 -->
+                        <span id="tip4"> </span>
+                    </div>
+                    
+                </div>
+                <a href="javascript:;" id="ljzc">立即注册</a>
+            </div>    
+            </div>
+        </div>
+    </div>
+
+
+    <div id="foot"><!-- 底部 -->
+        <div class="foot-con">
+            <div class="fBox">
+                <ul>
+                    <li><a href="javaScript:;">本站简介</a></li>
+                    <li><a href="javaScript:;">帮助中心</a></li>
+                    <li><a href="javaScript:;">联系我们</a></li>
+                    <li><a href="javaScript:;">招聘英才</a></li>
+                </ul>
+            </div>
+            <div class="fBox2">
+                <div class="imgS">
+                <a href="javaScript:;" class="a">
+                    <img src="http://www.bookschina.com/images/chengxin.jpg" alt="">
+                </a>
+                <a href="javaScript:;">
+                    <img src="http://www.bookschina.com/images/ectrust.gif" alt="">
+                </a>
+            </div>
+                <div class="licence">
+                    <p class="zzz">
+                        <a href="javaScript:;">京ICP备09013606号-3</a>
+                        <a href="javaScript:;">京信市监发[2002]122号</a>
+                        <span>海淀公安分局备案编号：1101083394</span>
+                    </p>
+                    <p>
+                        <a href="javaScript:;">营业执照</a>
+                        <a href="javaScript:;">出版物经营许可证 京出发京批字第直110071</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

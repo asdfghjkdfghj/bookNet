@@ -1,27 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="./lib/jquery1.12.4.min.js"></script>
 </head>
 <body>
-    <!-- 头部 -->
-    <div class="head">
-        <!-- 网站顶部 -->
-        <div class="topBar"></div>
-        <!-- 网站头部 -->
-        <div class="logoBar"></div>
+    <div class="topBar">
+        <div class="toolbar">
+            <div class="toolbarLeft">
+                欢迎光临中国图书网&nbsp;&nbsp;&nbsp;&nbsp;请&nbsp;&nbsp;
+                <a href="./login.html" target="_blank">登录</a>
+                <span>|</span>
+                <a href="#">注册</a>
+            </div>
+            <div class="toolbarRight">
+                <ul>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li>
+                        <div class="account">
+                            <a href="./login.html" target="_blank">我的账户</a>
+                            <span class="iconfont icon-jiantou" style="font-size: 10px"></span>
+                            <div class="dropLayer" style="width: 162px;">
+                                <a href="./login.html" target="_blank">我的收藏夹</a>
+                                <a href="./login.html" target="_blank">账户余额</a>
+                                <a href="./login.html" target="_blank">我的优惠券</a>
+                                <a href="./login.html" target="_blank">我的积分</a>
+                                <a href="./login.html" target="_blank">收货地址</a>
+                                <a href="./login.html" target="_blank">我的书评</a>
+                                <a href="./login.html" target="_blank">我的消息</a>
+                                <a href="./login.html" target="_blank">积分换券</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li>
+                        <div class="phoneChina">
+                            <a href="#">手机中国</a>
+                            <span class="iconfont icon-jiantou" style="font-size: 10px"></span>
+                            <div class="dropLayer"
+                                style="right: 0; left: initial; width: 164px; padding-bottom: 7px; padding-left: 5px;">
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="http://www.bookschina.com/Images/weiboerweima.jpg" alt="中图网微博">
+                                    </div>
+                                    <div class="text">
+                                        <b>扫一扫</b>
+                                        <span>关注中图网<br>
+                                            官方微博
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="http://www.bookschina.com/Images/weixinerweima.jpg" alt="中图网微信">
+                                    </div>
+                                    <div class="text">
+                                        <b>扫一扫</b>
+                                        <span>关注中图网<br>
+                                            微信公众号
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="http://www.bookschina.com/Images/phoneerweima.jpg" alt="手机中图">
+                                    </div>
+                                    <div class="text">
+                                        <b>手机中图</b>
+                                        <span>进入中图网<br>
+                                            手机触屏版
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <div id="top">
+        <!--头部  -->
+        <div class="top-con">
+            <img src="http://www.bookschina.com/shopcar/images/logo5.jpg" alt="" class="img1">
+            <span class="yuan">✓</span>
+            <p class="books">正版好图书</p>
+            <span class="yuan1">✓</span>
+            <p class="books1">全场满69元包邮</p>
+            <span class="yuan2">✓</span>
+            <p class="books2">特价书一折起</p>
+        </div>
+    </div>
+
+
+
     <!-- 主体 -->
-    <div class="content"></div>
+    <div class="content" id="car">
+        <div class="contentInner empty_cart">        
+            <div class="tabShopCar clearfix">
+                <div class="carTab">
+                    <ul>
+                        <li class="cur"><a href="javsscript:void(0)">购物车(<span>0</span>)</a></li>
+                        <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="cartEmpty clearfix">
+                <div class="emptyIcon">
+                </div>
+                <div class="emptyText">
+                    <span>购物车空空的哦~，去看看心仪的商品吧~</span>
+                    <a href="./index.html">去购物</a>
+                </div>
+            </div>
+        </div>                
+    
+        <div class="contentInner full_car">
+                <div class="shoppingProcedure">
+                    <span class="current">我的购物车 </span>
+                    <span>填写核对订单信息</span>
+                    <span>成功提交订单</span>
+                </div>
+    
+                <div class="tabShopCar clearfix">
+                    <div class="carTab">
+                        <ul>
+                            <li class="cur"><a href="javsscript:void(0)" class="">购物车(<span>1</span>)</a></li>
+                            <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li>
+                        </ul>
+                    </div>
+                    <div class="shoppingTip">
+                        <strong>重要提示</strong><strong>|</strong>
+                        
+                        <span>登录后可保存您购物车中的商品，并可看到您的星级会员价</span>
+                       
+                    </div>
+                </div>
+    
+                <div class="shoppingCar">
+                    <!--购物车头部-->
+                    <div class="shoppingTitle">
+                        <ul>
+                            <li class="f1"><span class="J_selectALL"></span>全选</li>
+                            <li class="f2">图书名称</li>
+                            <li class="f3">定价（元）</li>
+                            <li class="f4">一星会员（元）</li>
+                            <li class="f5">数量操作</li>
+                            <li class="f6">小计（元）</li>
+                            <li class="f7">操作</li>
+                        </ul>
+                    </div>
+                    <!--购物车内容-->
+                    <!-- <div class="shoppingListWrap shoppingListContent">
+                        <div class="shoppingItem NoActivity">
+                            <div class="shoppingList clearfix">
+                                <div class="cartCheckbox fl">
+                                    <span class="J_check">选中</span>
+                                </div>
+                                <div class="goodImg fl">
+                                    <a href=""><img src="./img/ia_100000031.jpg" alt=""></a>
+                                </div>
+                                <div class="goodName fl">
+                                    <a href="">谈作文</a>
+                                </div>
+                                <div class="goodPrice fl">
+                                    <strong>￥39</strong>
+                                </div>
+                                <div class="goodSellPrice fl">
+                                    <strong>￥25.4</strong>
+                                </div>
+                                <div class="goodQuantity fl">
+                                    <div class="quantityForm fl">
+                                        <a href="">-</a>
+                                        <input type="text" name="" id="" value="1">
+                                        <a href="">+</a>
+                                    </div>
+                                    <div class="limitText"></div>
+                                </div>
+                                <div class="goodSum fl">
+                                    <strong class="subtotal">￥25.4</strong>
+                                </div>
+                                <div class="goodOperation fl">
+                                    <a href="">删除</a>
+                                    <a href="">移入收藏</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+        </div>    
+        <!--购物车脚部-->
+        <div class="myf clearfix">
+            <em>运费</em><p>再满 <span>￥2.5</span> 即可免运费 <a href="/subject/190815cd.aspx">去凑单 ></a></p>
+        </div>            
+        <div class="shoppingfootWrap full_car" id="shoppingfootWrap">
+                <div class="shoppingfootinner">
+                    <div class="shoppingFoot clearfix">
+                        <div class="shoppingFootLeft fl clearfix">
+                            <div class="Checkbox fl">
+                                <span class="J_selectALL">选中</span>全选
+                            </div>
+                            <div class="removeGood fl"><a href="javascript:void(0)" class="J_deleteALL">删除选中的商品</a></div>
+                            <div class="removeGood fl"><a href="javascript:void(0)" class="J_deleteStock">清除下架或缺货商品</a></div>
+                        </div>
+                        <div class="shoppingFootRight fr">
+                            <div class="fl shoppingResult">
+                                <div class="result">
+                                    已选择<span id="J_SumCount">0</span>件商品，商品总金额<span class="money">￥</span><b id="J_SumZongJia">0</b>
+                                </div>
+                                <div class="discoutResult">
+                                    已优惠：￥<b id="J_SumYouhui">0</b>
+                                </div>
+                            </div>
+                            <div class="submitBtn fl cur" id="J_submitBtn">
+                                <a href="javascript:void(0);">立即结算</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>            
+        <!--购物车脚部结束-->
+    </div>
+
+
     <!-- 推荐 -->
-    <div class="recommended_panel"></div>
+    <div class="recommended_panel">
+        <div class="w1200">
+            <div class="tablist">
+                <ul>
+                    <li class="exclusive " index=0>中国推荐的</li>
+                    <li class="exclusive " index=1>最近浏览的</li>
+                    <li class="exclusive " index=2>猜你喜欢的</li>
+                </ul>
+            </div>
+            <div class="content_list clearfix">
+                <div class="w1200">
+                    <div class="p_wrap clearfix">
+                        <ul class="clearfix" style="display: block">
+                            <li >
+                                <div class="p_img">
+                                    <img src="./img/ia_100000063.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">古代中国与世界:一个古史研究者的思考</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000064.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">我是猫</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000065.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">旷世奇才梁启超</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000065.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">每个词都知道某种魔圈:《世界文学》十年散文精选</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000073.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">学词入门第一书:白香词谱</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000074.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000075.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000076.jpg "alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                   <img src="./img/ia_100000073.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">地疤</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000075.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000083.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000086.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000083.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000085.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p_img">
+                                    <img src="./img/ia_100000097.jpg" alt="">
+                                </div>
+                                <div class="p_name">
+                                    <a href="#">瑜珈熊和你一起做游戏·好玩的游戏</a>
+                                </div>
+                                <div class="p_price">
+                                    <strong>
+                                        <b>￥</b><span>20</span>
+                                    </strong>
+                                    <del>
+                                        <b>￥</b><span>12</span>
+                                    </del>
+                                </div>
+                                <div class="p_button">
+                                    <a href="javascript:;">加入购物车</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 底部 -->
-    <div class="footerWrap"></div>
-    <!-- 在线客服 -->
-    <div class="cusSer"></div>
-    <div class="class"></div>
+    <div class="footerWrap">
+        <div class="w1200">
+            <div class="footer_nav ">
+                <dl>
+                    <dt>新手上路</dt>
+                    <dd>购物流程演示</dd>
+                    <dd>注册用户 更改注册信息</dd>
+                    <dd>购物常见问题</dd>
+                    <dd>关于特价书的常见问题</dd>
+                </dl>
+                <dl>
+                    <dt>购买问题</dt>
+                    <dd>订单跟踪</dd>
+                    <dd>付款方式</dd>
+                    <dd>账户余额 &nbsp;申请提现</dd>
+                    <dd>配送方式及费用、范围</dd>
+                    <dd>集团购买</dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>退换货流程</dd>
+                    <dd>付款方式</dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd>会员等级与积分</dd>
+                    <dd>中图书馨卡</dd>
+                    <dd>邮件订阅</dd>
+                    <dd>邀请好友购买返10元礼包</dd>
+                </dl>
+                <dl>
+                    <dt>其他信息</dt>
+                    <dd>本站简介</dd>
+                    <dd>联系我们</dd>
+                    <dd>招聘英才</dd>
+                    <dd>网站联盟</dd>
+                    <dd>友情链接</dd>
+                </dl>
+                <dl>
+                    <dt>关注中图网微信号</dt>
+                    <dd>
+                        <img src="./img/ia_100000460.jpg" alt="">
+                    </dd>
+                </dl>
+            </div>
+            <div class="certifica">
+                <div class="credit_certifica">
+                    <img src="./img/ia_100000462.jpg" alt="">
+                    <img src="./img/ia_100000463.gif" alt="">
+                </div>
+                <div class="licence">
+                    <p>经营许可证编号：京ICP备09013606号-3&nbsp;&nbsp;&nbsp;&nbsp;京信市监发[2002]122号3&nbsp;&nbsp;&nbsp;&nbsp;海淀公安分局备案编号:1101083394</p>
+                    <p>营业执照&nbsp;&nbsp;&nbsp;&nbsp;出版物经营许可证</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="./js/xuanxiangka.js"></script>
+<script src="./js/shopCart.js"></script>
 </html>

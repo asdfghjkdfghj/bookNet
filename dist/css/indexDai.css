@@ -1,0 +1,303 @@
+@charset "UTF-8";
+.w1200 {
+  width: 1200px;
+  margin: auto; }
+
+#floor3 {
+  width: 100%;
+  height: 598px; }
+
+.floorTit {
+  width: 100%;
+  height: 55px;
+  background: #f5f5f5;
+  overflow: hidden; }
+
+#floor3 h2 {
+  float: left;
+  height: 100%;
+  width: 210px;
+  line-height: 55px;
+  text-indent: 16px;
+  background: #fc65b6; }
+
+#floor3 h2 > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Microsoft Yahei";
+  font-weight: normal; }
+
+.floorTit ul li {
+  float: left;
+  color: #3b3333;
+  text-decoration: none; }
+
+.floorTit ul li > a {
+  line-height: 55px;
+  padding: 0 19px; }
+
+.floorTit ul li > span {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #dedede;
+  display: inline-block;
+  width: 10px;
+  transform: scaleX(0.3); }
+
+.floorTit ul li:hover {
+  border-top: 3px solid #fc65b6; }
+
+.floorTit ul li a:hover {
+  color: #fc65b6;
+  text-decoration: none;
+  padding-top: 23px; }
+
+.floorCon {
+  height: 533px;
+  margin-top: 10px; }
+
+/* 左边 */
+.foorLeft {
+  float: left;
+  width: 960px;
+  height: 100%; }
+
+.bannerWrap {
+  width: 210px;
+  height: 100%;
+  background: rosybrown;
+  float: left; }
+
+.bannerWrapTop {
+  width: 210px; }
+
+/*益智启蒙畅销榜 */
+.kindText {
+  width: 210px;
+  height: 198px;
+  background: yellowgreen; }
+
+.kindText {
+  background: #eeeeee; }
+
+.kindTextTit a {
+  font-size: 16px;
+  color: #fc65b6;
+  margin-left: 20px;
+  display: block;
+  padding-top: 20px; }
+
+.kindText ul {
+  margin-top: 10px; }
+
+.kindText ul li {
+  line-height: 30px;
+  margin-left: 15px;
+  font-weight: normal;
+  color: #68686b; }
+
+.kindText ul li span {
+  padding: 5px;
+  color: #68686b; }
+
+/* 少儿图书中间部分 */
+.floorTabRightInner {
+  width: 750PX;
+  height: 532px;
+  float: left;
+  position: relative; }
+
+.floorTabRightInner ul {
+  position: absolute;
+  display: none; }
+
+.floorTabRightInner ul li {
+  float: left;
+  width: 180px;
+  height: 266px;
+  position: relative;
+  background: #ffffff;
+  margin-left: 2px; }
+
+.bookimg img {
+  max-height: 158px;
+  max-width: 158px; }
+
+.floorTabRightInner ul li p {
+  width: 120px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #333;
+  margin-top: 20px;
+  line-height: 20px; }
+
+.floorTabRightInner ul li > h3 {
+  font-size: 12px;
+  font-weight: normal;
+  color: red;
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left; }
+
+.floorTabRightInner ul li > del {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 15px; }
+
+.foorRight {
+  float: right;
+  width: 240px;
+  overflow: hidden; }
+
+/* 最左框  奥克妈妈变形记 开始*/
+.seriesBook {
+  width: 100%;
+  height: 323px;
+  background: #ffffff; }
+
+.seriesBook ul {
+  height: 323px;
+  width: 100%; }
+
+.seriesBook ul > li {
+  width: 225px;
+  border: 1px solid #e6e6e6;
+  margin-left: 10px; }
+
+.seriesBook ul > li > p {
+  line-height: 33px;
+  text-align: center;
+  color: #604f41; }
+
+.seriesBook ul li:nth-child(1) img {
+  height: 102px;
+  width: 225px; }
+
+.seriesBook ul li:nth-child(1) p {
+  display: none; }
+
+.seriesBook ul li:nth-child(n+2) img {
+  display: none;
+  width: 225px; }
+
+/* 十四只老鼠的故事开始 */
+.floorSubImg {
+  width: 100%;
+  height: 170px;
+  margin-top: 35px; }
+
+.floorSubImg img {
+  width: 225px;
+  height: 170px;
+  margin-left: 10px; }
+
+#xuangxiangka {
+  display: block; }
+
+/*   其他楼层      */
+/* 左边选项卡 */
+.otherFloorWrap {
+  width: 100%; }
+
+.otherTit {
+  width: 100%;
+  height: 55px;
+  background: #f5f5f5;
+  margin-top: 20px; }
+
+.otherFloorWrap {
+  height: 321px; }
+
+.otherTit ul li {
+  float: left;
+  padding-left: 19px; }
+
+.otherTit ul li a {
+  padding-top: 5px;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+  display: block;
+  padding-right: 20px;
+  border-right: 1px solid #dedede;
+  margin-top: 15px; }
+
+.otherTit ul li:hover {
+  border-top: 4px solid red; }
+
+.otherContent {
+  width: 950px;
+  height: 226px;
+  background: #ffffff;
+  margin-top: 10px;
+  float: left;
+  /* position: relative; */ }
+
+.otherContent ul {
+  /* position: absolute; */
+  display: none; }
+
+.otherContent ul li {
+  float: left;
+  margin-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.otherContent ul li p {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 10px; }
+
+.otherContent ul li h3 {
+  margin-top: 10px;
+  float: left;
+  margin-left: 20px;
+  color: red;
+  font-weight: normal; }
+
+.otherContent ul li del {
+  margin-top: 10px;
+  display: inline-block;
+  padding-left: 10px;
+  color: #999999; }
+
+/* 右边当代画家 */
+.otherleft {
+  width: 250px;
+  height: 100%;
+  float: right; }
+
+.leftBook {
+  width: 100%;
+  height: 323px;
+  background: #ffffff;
+  margin-top: 10px; }
+
+.leftBook ul {
+  height: 323px;
+  width: 100%; }
+
+.leftBook ul > li {
+  width: 225px;
+  border: 1px solid #e6e6e6;
+  margin-left: 10px; }
+
+.leftBook ul > li > p {
+  line-height: 33px;
+  text-align: center;
+  color: #604f41; }
+
+.leftBook ul li:nth-child(1) img {
+  height: 102px;
+  width: 225px; }
+
+.leftBook ul li:nth-child(1) p {
+  display: none; }
+
+.leftBook ul li:nth-child(n+2) img {
+  display: none;
+  width: 225px; }

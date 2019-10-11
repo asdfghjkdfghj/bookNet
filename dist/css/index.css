@@ -1,0 +1,1115 @@
+@charset "UTF-8";
+/* 顶部banner图 */
+.topBanner {
+  height: 100px;
+  background: #d6f8fd;
+  position: relative; }
+  .topBanner .smallBanner {
+    height: 100px;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px; }
+
+/* 工具栏 */
+.topBar {
+  position: relative;
+  background: #f2f2f2;
+  height: 31px;
+  font-size: 12px;
+  color: #666; }
+  .topBar .toolbar {
+    height: 31px;
+    line-height: 30px;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px; }
+    .topBar .toolbar .toolbarLeft {
+      float: left; }
+      .topBar .toolbar .toolbarLeft span {
+        color: #d1d1d1;
+        margin: 0 7px; }
+      .topBar .toolbar .toolbarLeft a {
+        color: #e60000; }
+    .topBar .toolbar .toolbarRight {
+      float: right; }
+      .topBar .toolbar .toolbarRight ul li {
+        position: relative;
+        float: left;
+        margin: 0 16px; }
+        .topBar .toolbar .toolbarRight ul li .dropLayer {
+          display: none;
+          width: 162px;
+          position: absolute;
+          top: 29px;
+          left: -14px;
+          border: 1px solid #dadada;
+          background: #fff;
+          padding-left: 12px;
+          z-index: 2;
+          box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1); }
+          .topBar .toolbar .toolbarRight ul li .dropLayer a {
+            float: left;
+            color: #666;
+            display: block;
+            width: 76px;
+            line-height: 24px;
+            margin-bottom: 6px; }
+            .topBar .toolbar .toolbarRight ul li .dropLayer a:hover {
+              color: #666; }
+          .topBar .toolbar .toolbarRight ul li .dropLayer .erweimaWrap {
+            padding-top: 9px;
+            overflow: hidden; }
+            .topBar .toolbar .toolbarRight ul li .dropLayer .erweimaWrap .erweima {
+              float: left;
+              width: 75px;
+              height: 75px; }
+            .topBar .toolbar .toolbarRight ul li .dropLayer .erweimaWrap .text b {
+              color: #e60000;
+              display: block;
+              margin-top: 5px; }
+            .topBar .toolbar .toolbarRight ul li .dropLayer .erweimaWrap .text span {
+              color: #666;
+              display: block;
+              padding-top: 9px;
+              line-height: 14px; }
+
+/* 搜索区域 */
+.searchBar {
+  height: 100px;
+  float: left; }
+  .searchBar .searchBarFixed {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    height: 100px; }
+    .searchBar .searchBarFixed .logo {
+      float: left; }
+      .searchBar .searchBarFixed .logo a {
+        display: block;
+        width: 248px;
+        padding: 21px 0 25px 0;
+        margin-right: 26px; }
+    .searchBar .searchBarFixed .searchArea {
+      float: left;
+      margin-top: 20px; }
+      .searchBar .searchBarFixed .searchArea .clearfix .searchInput {
+        float: left;
+        width: 606px;
+        border: 2px solid #e60000;
+        position: relative; }
+        .searchBar .searchBarFixed .searchArea .clearfix .searchInput .inputWarp {
+          width: 508px; }
+          .searchBar .searchBarFixed .searchArea .clearfix .searchInput .inputWarp input {
+            height: 36px;
+            display: block;
+            width: 100%;
+            float: left;
+            line-height: 36px;
+            text-indent: 1em;
+            color: #666;
+            font-size: 12px; }
+        .searchBar .searchBarFixed .searchArea .clearfix .searchInput .dropSearch {
+          float: left;
+          width: 98px;
+          position: relative; }
+          .searchBar .searchBarFixed .searchArea .clearfix .searchInput .dropSearch a {
+            background: #e60000;
+            display: block;
+            text-align: center;
+            line-height: 36px;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: 3px;
+            height: 38px; }
+            .searchBar .searchBarFixed .searchArea .clearfix .searchInput .dropSearch a:hover {
+              text-decoration: none; }
+          .searchBar .searchBarFixed .searchArea .clearfix .searchInput .dropSearch ul {
+            height: 38px;
+            border-left: 1px #dbdbdb solid;
+            position: absolute;
+            top: 0;
+            right: 98px; }
+            .searchBar .searchBarFixed .searchArea .clearfix .searchInput .dropSearch ul li a {
+              font-size: 12px;
+              display: block;
+              height: 36px;
+              padding: 0 9px;
+              background: #fff;
+              width: 63px;
+              color: #999;
+              letter-spacing: 0; }
+      .searchBar .searchBarFixed .searchArea .clearfix .moreSearch {
+        float: left;
+        line-height: 40px;
+        margin-left: 15px; }
+        .searchBar .searchBarFixed .searchArea .clearfix .moreSearch a {
+          color: #e60000; }
+      .searchBar .searchBarFixed .searchArea .hotWord {
+        line-height: 28px;
+        overflow: hidden; }
+        .searchBar .searchBarFixed .searchArea .hotWord a {
+          float: left;
+          margin-right: 25px;
+          color: #999; }
+          .searchBar .searchBarFixed .searchArea .hotWord a:hover {
+            color: #e60000;
+            text-decoration: none; }
+    .searchBar .searchBarFixed .notice {
+      width: 135px;
+      margin: 25px 25px 0 0;
+      padding: 0 0 0 33px;
+      position: relative;
+      float: right; }
+      .searchBar .searchBarFixed .notice .noticePanel {
+        float: left;
+        height: 40px;
+        overflow: hidden;
+        position: relative; }
+        .searchBar .searchBarFixed .notice .noticePanel .tempWrap {
+          height: 40px;
+          position: relative;
+          overflow: hidden; }
+          .searchBar .searchBarFixed .notice .noticePanel .tempWrap ul {
+            height: 200px;
+            position: relative;
+            padding: 0;
+            margin: 0; }
+            .searchBar .searchBarFixed .notice .noticePanel .tempWrap ul li {
+              height: 40px;
+              display: table;
+              overflow: hidden; }
+              .searchBar .searchBarFixed .notice .noticePanel .tempWrap ul li a {
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000;
+                text-decoration: none;
+                font-family: "Microsoft YaHei"; }
+      .searchBar .searchBarFixed .notice span {
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: 0;
+        top: 50%;
+        margin-top: -13px;
+        font-size: 23px;
+        color: #e60000; }
+
+/* 导航 */
+.nav .w1200 {
+  width: 1200px;
+  margin: auto;
+  border-bottom: 2px solid #e60000;
+  position: relative; }
+  .nav .w1200 .navBar {
+    height: 42px;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    position: relative;
+    background: pink; }
+    .nav .w1200 .navBar .navbarLeft {
+      float: left;
+      height: 42px;
+      width: 200px;
+      background: #e60000;
+      cursor: pointer; }
+      .nav .w1200 .navBar .navbarLeft span, .nav .w1200 .navBar .navbarLeft h2 {
+        font-size: 16px;
+        color: #fff;
+        float: left;
+        line-height: 42px;
+        font-family: "Microsoft YaHei";
+        font-weight: normal; }
+      .nav .w1200 .navBar .navbarLeft span:nth-of-type(1) {
+        margin: 0 10px; }
+      .nav .w1200 .navBar .navbarLeft span:nth-of-type(2) {
+        float: right;
+        margin-right: 20px; }
+    .nav .w1200 .navBar .navbarRight {
+      float: left;
+      width: 1000px;
+      height: 42px;
+      background: #ccc; }
+      .nav .w1200 .navBar .navbarRight ul li {
+        float: left;
+        padding: 0 24px; }
+        .nav .w1200 .navBar .navbarRight ul li a {
+          display: block;
+          height: 42px;
+          line-height: 42px;
+          color: #333;
+          font-size: 18px;
+          font-family: "Microsoft YaHei";
+          text-decoration: none; }
+          .nav .w1200 .navBar .navbarRight ul li a:hover {
+            color: #e60000; }
+      .nav .w1200 .navBar .navbarRight ul li:nth-of-type(4) span {
+        font-size: 16px;
+        color: #ff9c00; }
+      .nav .w1200 .navBar .navbarRight ul li:nth-of-type(4) a {
+        display: inline-block; }
+      .nav .w1200 .navBar .navbarRight ul li:nth-of-type(1) a {
+        color: #e60000;
+        font-weight: bold; }
+  .nav .w1200 .category {
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    z-index: 112;
+    width: 200px;
+    height: 696px; }
+    .nav .w1200 .category .categoryInner {
+      width: 198px;
+      height: 702.67px;
+      background: #fff;
+      border: 1px solid #e60000; }
+      .nav .w1200 .category .categoryInner .category-list .js_toggle {
+        padding-top: 2px;
+        background: url(../img/navline.jpg) no-repeat bottom center;
+        padding-bottom: 2px;
+        border-left: 2px solid #fff;
+        border-right: none;
+        position: relative;
+        z-index: 113;
+        vertical-align: bottom; }
+        .nav .w1200 .category .categoryInner .category-list .js_toggle .category-info {
+          padding-left: 11px; }
+          .nav .w1200 .category .categoryInner .category-list .js_toggle .category-info .category-name {
+            padding-top: 8px; }
+            .nav .w1200 .category .categoryInner .category-list .js_toggle .category-info .category-name .ml-22 {
+              font-size: 16px;
+              color: red; }
+          .nav .w1200 .category .categoryInner .category-list .js_toggle .category-info .c-category-list {
+            position: relative;
+            margin-top: 7px;
+            line-height: 24px;
+            padding-bottom: 10px;
+            overflow: hidden;
+            margin-right: 11px; }
+            .nav .w1200 .category .categoryInner .category-list .js_toggle .category-info .c-category-list a {
+              margin-right: 12px;
+              color: #666;
+              text-decoration: none;
+              white-space: nowrap;
+              line-height: 24px; }
+              .nav .w1200 .category .categoryInner .category-list .js_toggle .category-info .c-category-list a:hover {
+                color: #e60000; }
+        .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item {
+          position: absolute;
+          left: 190px;
+          width: 757px;
+          background: #fff;
+          border: none;
+          border-top: 1px solid #00b6f0;
+          border: 2px solid #e60000;
+          background: #fff;
+          left: 197px; }
+          .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg {
+            padding: 10px 0 10px 16px; }
+            .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist {
+              padding-right: 32px; }
+              .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li {
+                overflow: hidden;
+                padding: 9px 0;
+                border-bottom: 1px solid #f0f0f0; }
+                .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li:last-child {
+                  border-bottom: none; }
+                .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li .mcate-item-hd {
+                  font-size: 12px;
+                  float: left;
+                  width: 85px;
+                  line-height: 24px; }
+                  .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li .mcate-item-hd a {
+                    font-size: 12px;
+                    color: #e60000;
+                    text-decoration: none; }
+                .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li .mcate-item-bd {
+                  float: left;
+                  width: 600px;
+                  overflow: hidden;
+                  line-height: 24px;
+                  overflow: hidden; }
+                  .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li .mcate-item-bd a {
+                    text-decoration: none;
+                    float: left;
+                    color: #666666;
+                    margin: 0 16px; }
+                    .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li .mcate-item-bd a:hover {
+                      color: #e60000; }
+                  .nav .w1200 .category .categoryInner .category-list .js_toggle .menu-item .area-bg .sublist li .mcate-item-bd span {
+                    float: left;
+                    color: #d6d6d6; }
+      .nav .w1200 .category .categoryInner .category-list .hover {
+        border: 1px red solid;
+        border-right: none; }
+      .nav .w1200 .category .categoryInner .all-category {
+        text-align: right;
+        padding-right: 12px;
+        line-height: 21px; }
+    .nav .w1200 .category .minNav {
+      border: 1px solid #c8c8c8;
+      width: 198px;
+      height: 174px;
+      margin-top: 10px;
+      overflow: hidden; }
+      .nav .w1200 .category .minNav h4 {
+        background: url(http://www.bookschina.com/Images/Head/shu_icon.png) no-repeat 14px;
+        font-family: 'Microsoft YaHei';
+        font-size: 16px;
+        padding-left: 14px;
+        text-indent: 24px;
+        height: 42px;
+        line-height: 42px;
+        border-bottom: 1px solid #eaeaea;
+        color: #e60000;
+        font-weight: 100; }
+      .nav .w1200 .category .minNav a {
+        position: relative;
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        color: #666;
+        text-decoration: none;
+        white-space: nowrap;
+        text-indent: 14px;
+        border-bottom: 1px solid #eaeaea; }
+
+/*主体*/
+/*网站通栏 banner*/
+.bannerWrap .w1200 {
+  width: 1200px;
+  margin: auto; }
+  .bannerWrap .w1200 .banner {
+    margin: 10px 0 0 210px;
+    position: relative;
+    height: 360px;
+    width: 990px;
+    overflow: hidden; }
+    .bannerWrap .w1200 .banner .bannerList {
+      height: 360px;
+      width: 987px;
+      overflow: hidden; }
+    .bannerWrap .w1200 .banner .bannerdot {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0; }
+      .bannerWrap .w1200 .banner .bannerdot a {
+        float: left;
+        width: 141px;
+        padding: 3px 0;
+        text-align: center;
+        height: 40px;
+        color: #fff;
+        cursor: pointer;
+        line-height: 40px;
+        display: table;
+        background: rgba(0, 0, 0, 0.7);
+        text-decoration: none; }
+        .bannerWrap .w1200 .banner .bannerdot a span {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0 10px; }
+      .bannerWrap .w1200 .banner .bannerdot .bg {
+        background: red; }
+    .bannerWrap .w1200 .banner .arrowL {
+      width: 30px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -19px;
+      cursor: pointer;
+      display: none;
+      text-align: center;
+      line-height: 40px; }
+      .bannerWrap .w1200 .banner .arrowL .leftArrow {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff; }
+    .bannerWrap .w1200 .banner .arrowR {
+      width: 30px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -19px;
+      cursor: pointer;
+      display: none;
+      text-align: center;
+      line-height: 40px; }
+      .bannerWrap .w1200 .banner .arrowR .rightArrow {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff; }
+
+/*畅销榜 */
+.hotBookWrap {
+  position: relative;
+  z-index: 6; }
+  .hotBookWrap .w1200 {
+    width: 1200px;
+    margin: auto; }
+    .hotBookWrap .w1200 .hotbookinner {
+      margin: 10px 0 0 210px;
+      width: 990px; }
+      .hotBookWrap .w1200 .hotbookinner .hotBook {
+        float: left;
+        width: 730px;
+        height: 490px;
+        background: #eff2fa;
+        padding: 10px;
+        overflow: hidden; }
+        .hotBookWrap .w1200 .hotbookinner .hotBook .tabTit {
+          overflow: hidden;
+          width: 730px;
+          height: 40px; }
+          .hotBookWrap .w1200 .hotbookinner .hotBook .tabTit a {
+            cursor: default;
+            float: left;
+            border-top: 3px solid #eff2fa;
+            color: #333333;
+            font-family: "Microsoft YaHei";
+            font-size: 16px;
+            height: 37px;
+            line-height: 30px;
+            padding: 0 25px;
+            text-decoration: none; }
+          .hotBookWrap .w1200 .hotbookinner .hotBook .tabTit .cur {
+            border-top: 3px solid #e60000;
+            color: #e60000;
+            background: #fff;
+            font-weight: bold; }
+        .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon {
+          width: 730px;
+          height: 450px;
+          background: #fff; }
+          .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList {
+            position: relative;
+            display: block; }
+            .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor {
+              overflow: hidden; }
+              .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop {
+                padding: 15px 15px 0;
+                height: 174px;
+                border-bottom: 1px solid #eef1f9; }
+                .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainCover {
+                  float: left;
+                  height: 160px;
+                  width: 189px;
+                  text-align: center;
+                  display: inline;
+                  position: relative; }
+                  .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainCover a {
+                    display: block;
+                    height: 160px;
+                    background: #fff; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainCover a img {
+                      max-height: 160px;
+                      max-width: 160px; }
+                .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainText {
+                  float: left;
+                  width: 495px;
+                  display: inline;
+                  overflow: hidden; }
+                  .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainText h2 {
+                    margin-top: 10px;
+                    line-height: 30px; }
+                  .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainText .priceWrap {
+                    overflow: hidden;
+                    line-height: 30px; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainText .priceWrap .sellPrice {
+                      color: red;
+                      float: left;
+                      font-size: 18px; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainText .priceWrap .price {
+                      color: #999999;
+                      margin-left: 11px;
+                      text-decoration-line: line-through;
+                      float: left;
+                      font-size: 18px; }
+                  .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainText .mainFont {
+                    height: 96px;
+                    overflow: hidden; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .mainEditor .mainEditorTop .mainText .mainFont p {
+                      color: #666;
+                      line-height: 24px;
+                      margin-top: 1px;
+                      text-indent: 2em; }
+            .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook {
+              padding: 0 1px;
+              margin-top: 10px; }
+              .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix {
+                overflow: hidden;
+                zoom: 1;
+                display: block; }
+                .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li {
+                  float: left;
+                  width: 182px;
+                  overflow: hidden;
+                  position: relative; }
+                  .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li .Img {
+                    text-align: center;
+                    margin-top: 7px;
+                    height: 158px; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li .Img img {
+                      max-width: 158px;
+                      max-height: 158px; }
+                  .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li .name {
+                    padding: 10px 15px 0;
+                    line-height: 18px;
+                    height: 36px;
+                    overflow: hidden; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li .name a {
+                      font-size: 12px;
+                      text-decoration: none; }
+                  .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li .priceWrap {
+                    overflow: hidden;
+                    line-height: 20px;
+                    padding: 4px 15px 15px 15px; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li .priceWrap .sellPrice {
+                      color: red;
+                      float: left;
+                      font-size: 16px; }
+                    .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .tabConList .tabBook .clearFix li .priceWrap .price {
+                      color: #999999;
+                      margin-left: 11px;
+                      text-decoration-line: line-through;
+                      float: left;
+                      font-size: 12px; }
+          .hotBookWrap .w1200 .hotbookinner .hotBook .tabCon .cur {
+            display: block; }
+      .hotBookWrap .w1200 .hotbookinner .hotSale {
+        float: right;
+        width: 230px;
+        height: 510px;
+        background: #f0f0f0; }
+        .hotBookWrap .w1200 .hotbookinner .hotSale .hotTitle {
+          line-height: 32px;
+          height: 32px;
+          overflow: hidden;
+          background: #fff; }
+          .hotBookWrap .w1200 .hotbookinner .hotSale .hotTitle h2 {
+            float: left;
+            font-size: 16px;
+            color: red;
+            font-weight: bold; }
+          .hotBookWrap .w1200 .hotbookinner .hotSale .hotTitle a {
+            float: right;
+            color: #999999; }
+        .hotBookWrap .w1200 .hotbookinner .hotSale .hotNav {
+          font-size: 12px;
+          position: relative;
+          background: #fff; }
+          .hotBookWrap .w1200 .hotbookinner .hotSale .hotNav .navDot {
+            overflow: hidden;
+            height: 36px;
+            border-right: 1px solid #e6e6e6;
+            position: relative;
+            cursor: pointer; }
+            .hotBookWrap .w1200 .hotbookinner .hotSale .hotNav .navDot ul {
+              overflow: hidden;
+              width: 560px;
+              position: absolute;
+              top: 0; }
+              .hotBookWrap .w1200 .hotbookinner .hotSale .hotNav .navDot ul li {
+                float: left;
+                width: 56px;
+                height: 34px;
+                display: inline;
+                border: 1px solid #e6e6e6;
+                border-right: none;
+                line-height: 34px;
+                text-align: center;
+                color: #666; }
+              .hotBookWrap .w1200 .hotbookinner .hotSale .hotNav .navDot ul .cur {
+                border-top: 2px solid red;
+                border-bottom: none; }
+        .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon {
+          border: 1px solid #eaeaea;
+          border-top: none;
+          border-bottom: none;
+          overflow: hidden;
+          background: #fff;
+          height: 422px; }
+          .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon .on {
+            display: block; }
+          .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul {
+            display: none; }
+            .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul .red i {
+              color: red; }
+            .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul .cur p, .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul .cur em {
+              display: none; }
+            .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul .cur .bookCur {
+              display: block; }
+            .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li {
+              position: relative;
+              border-bottom: 1px solid #ccc; }
+              .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li i {
+                position: absolute;
+                height: 32px;
+                line-height: 32px;
+                font-size: 14px;
+                font-family: 'Microsoft YaHei';
+                width: 40px;
+                text-align: center;
+                top: 0; }
+              .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li em {
+                position: absolute;
+                font-size: 9px;
+                color: #7a7a7a;
+                height: 32px;
+                line-height: 32px;
+                right: 10px;
+                top: 0; }
+              .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li p {
+                height: 34px;
+                line-height: 34px;
+                color: #333333;
+                text-indent: 44px;
+                padding-right: 35px;
+                overflow: hidden;
+                cursor: pointer; }
+              .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur {
+                display: none;
+                overflow: hidden;
+                padding: 10px 0px 11px; }
+                .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bPic {
+                  float: left;
+                  width: 85px;
+                  height: 85px;
+                  margin-left: 35px;
+                  display: inline;
+                  text-align: center; }
+                  .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bPic img {
+                    max-width: 85px;
+                    max-height: 85px; }
+                .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bDetail {
+                  float: left;
+                  width: 100px;
+                  overflow: hidden; }
+                  .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bDetail .bName {
+                    margin-top: 8px;
+                    line-height: 22px;
+                    height: 44px;
+                    overflow: hidden;
+                    position: relative; }
+                    .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bDetail .bName a {
+                      display: block;
+                      height: 44px;
+                      text-decoration: none;
+                      color: #333;
+                      font-size: 12px;
+                      overflow: hidden; }
+                  .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bDetail .bPrice {
+                    overflow: hidden;
+                    margin-top: 3px; }
+                    .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bDetail .bPrice .sellPrice {
+                      float: left;
+                      color: red; }
+                    .hotBookWrap .w1200 .hotbookinner .hotSale .hotCon ul li .bookCur .bDetail .bPrice .price {
+                      float: left;
+                      color: #999999;
+                      text-decoration-line: line-through;
+                      margin-left: 3px; }
+        .hotBookWrap .w1200 .hotbookinner .hotSale .moreSale {
+          text-align: right;
+          line-height: 20px;
+          padding-right: 10px; }
+          .hotBookWrap .w1200 .hotbookinner .hotSale .moreSale a {
+            font-size: 12px;
+            color: #666; }
+
+/*专题插入广告*/
+.hotSubject {
+  padding-top: 20px; }
+  .hotSubject .w1200 {
+    width: 1200px;
+    margin: auto; }
+    .hotSubject .w1200 a {
+      float: left;
+      margin-left: 5px; }
+
+/*淘书团热销*/
+.tstWrap {
+  margin-top: 15px; }
+  .tstWrap .w1200 {
+    width: 1200px;
+    margin: auto; }
+    .tstWrap .w1200 .tst .tstTit {
+      overflow: hidden;
+      border-bottom: 3px solid #e60000; }
+      .tstWrap .w1200 .tst .tstTit h2 {
+        float: left;
+        line-height: 61px;
+        font-style: oblique; }
+        .tstWrap .w1200 .tst .tstTit h2 a {
+          color: #e60000;
+          overflow: hidden;
+          font-size: 22px; }
+        .tstWrap .w1200 .tst .tstTit h2 span {
+          color: #333333;
+          margin-left: 10px;
+          font-size: 18px;
+          font-style: oblique; }
+      .tstWrap .w1200 .tst .tstTit a.more {
+        float: right;
+        height: 58px;
+        line-height: 58px;
+        font-size: 14px;
+        padding-right: 20px; }
+    .tstWrap .w1200 .tst .tstCon .tstConInner .tstList {
+      position: relative;
+      width: 1200px;
+      height: 300px;
+      overflow: hidden;
+      margin-top: 14px; }
+      .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul {
+        width: 2440px;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li {
+        float: left;
+        width: 285px;
+        margin-right: 17px;
+        height: 298px;
+        border: 1px solid #e6e6e6; }
+        .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li .bookCover {
+          height: 190px; }
+          .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li .bookCover img {
+            width: 285px;
+            height: 190px; }
+        .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li p {
+          height: 66px;
+          overflow: hidden;
+          margin-top: 7px;
+          padding: 0 14px;
+          line-height: 22px; }
+        .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li .priceWrap {
+          padding: 0 14px; }
+          .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li .priceWrap span {
+            float: left;
+            color: #e60000;
+            font-size: 20px; }
+          .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li .priceWrap del {
+            float: left;
+            margin-left: 13px;
+            color: #999;
+            line-height: 28px; }
+          .tstWrap .w1200 .tst .tstCon .tstConInner .tstList ul li .priceWrap em {
+            float: right;
+            height: 16px;
+            line-height: 16px;
+            background: #5bd7ff;
+            color: #fff;
+            padding: 0 5px;
+            margin-top: 5px;
+            border-radius: 3px; }
+      .tstWrap .w1200 .tst .tstCon .tstConInner .tstList span.xleftArrow {
+        width: 27px;
+        height: 38px;
+        position: absolute;
+        line-height: 38px;
+        text-align: center;
+        top: 85px;
+        left: 2px;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.35); }
+      .tstWrap .w1200 .tst .tstCon .tstConInner .tstList span.reghtArrow {
+        background-color: rgba(0, 0, 0, 0.35);
+        line-height: 38px;
+        text-align: center;
+        width: 27px;
+        height: 38px;
+        position: absolute;
+        top: 85px;
+        right: 2px;
+        display: none; }
+
+/* 楼层 */
+.kindFloor {
+  margin-top: 25px; }
+  .kindFloor .w1200 {
+    width: 1200px;
+    margin: auto; }
+    .kindFloor .w1200 .floorTit {
+      position: relative;
+      background: #f5f5f5; }
+      .kindFloor .w1200 .floorTit h2 {
+        float: left;
+        height: 55px;
+        width: 210px;
+        line-height: 55px;
+        text-indent: 16px;
+        background: #00b6f0; }
+        .kindFloor .w1200 .floorTit h2 a {
+          display: block;
+          height: 55px;
+          text-decoration: none;
+          font-size: 22px;
+          color: #fff;
+          font-family: "黑体"; }
+      .kindFloor .w1200 .floorTit ul {
+        overflow: hidden;
+        float: left; }
+        .kindFloor .w1200 .floorTit ul li {
+          float: left;
+          padding: 0 19px;
+          background: url("http://www.bookschina.com/Images/kindline.jpg") no-repeat right; }
+          .kindFloor .w1200 .floorTit ul li a {
+            padding: 0 7px;
+            padding-top: 8px;
+            font-size: 15px;
+            color: #333333;
+            text-decoration: none;
+            display: block;
+            line-height: 32px;
+            height: 43px;
+            border-top: 4px solid #f5f5f5; }
+        .kindFloor .w1200 .floorTit ul li.cur a {
+          border-top: 4px solid #00b6f0;
+          color: #03a7db; }
+
+.floorCon {
+  margin-top: 10px; }
+  .floorCon .floorLeft {
+    float: left;
+    width: 960px; }
+    .floorCon .floorLeft .floorTabItem {
+      display: none; }
+      .floorCon .floorLeft .floorTabItem .floorTabLeft {
+        float: left;
+        width: 210px; }
+      .floorCon .floorLeft .floorTabItem .floorTabRight {
+        float: right;
+        width: 740px; }
+        .floorCon .floorLeft .floorTabItem .floorTabRight .floorTabRightInner {
+          position: relative; }
+        .floorCon .floorLeft .floorTabItem .floorTabRight .kindmore {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          position: absolute;
+          background: #bdeefe;
+          margin-top: -34px;
+          display: none; }
+          .floorCon .floorLeft .floorTabItem .floorTabRight .kindmore a {
+            display: block;
+            width: 14px;
+            text-align: center;
+            padding: 8px;
+            color: #00b6f0;
+            text-decoration: none; }
+        .floorCon .floorLeft .floorTabItem .floorTabRight .floorTabRightInner:hover .kindmore {
+          display: block; }
+    .floorCon .floorLeft .floorTabItem.cur {
+      display: block; }
+
+.tabBanner {
+  position: relative; }
+  .tabBanner .bannerWrap {
+    position: relative;
+    height: 334px;
+    overflow: hidden; }
+    .tabBanner .bannerWrap ul {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 630px; }
+      .tabBanner .bannerWrap ul li {
+        height: 334px;
+        overflow: hidden;
+        float: left;
+        width: 210px;
+        position: relative; }
+        .tabBanner .bannerWrap ul li h2 {
+          text-align: center;
+          font-family: 'Microsoft YaHei';
+          position: absolute;
+          height: 30px;
+          line-height: 30px;
+          top: 25px;
+          left: 16px;
+          width: 178px;
+          background: #fff; }
+          .tabBanner .bannerWrap ul li h2 a {
+            color: #0080cc;
+            text-decoration: none;
+            font-size: 16px; }
+        .tabBanner .bannerWrap ul li p {
+          position: absolute;
+          line-height: 20px;
+          width: 178px;
+          left: 16px;
+          color: #fff;
+          top: 67px; }
+
+.floorTabLeft .kindText {
+  background: #bdeefe;
+  padding: 0 15px;
+  margin-top: 1px;
+  height: 195px;
+  overflow: hidden; }
+  .floorTabLeft .kindText h3 {
+    color: #0080cc;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px; }
+    .floorTabLeft .kindText h3 a {
+      color: #0080cc; }
+  .floorTabLeft .kindText ul {
+    margin-top: 7px; }
+    .floorTabLeft .kindText ul li {
+      line-height: 26px;
+      height: 26px;
+      width: 180px;
+      overflow: hidden;
+      position: relative; }
+      .floorTabLeft .kindText ul li a {
+        color: #666;
+        text-decoration: none;
+        padding-left: 12px; }
+      .floorTabLeft .kindText ul li a:hover {
+        color: #07a1d2; }
+      .floorTabLeft .kindText ul li span {
+        top: 0;
+        position: absolute;
+        left: 0px;
+        font-size: 9px;
+        color: #82888a; }
+    .floorTabLeft .kindText ul li:hover span {
+      color: #07a1d2; }
+
+.floorTabRight ul {
+  overflow: hidden; }
+  .floorTabRight ul li {
+    float: left;
+    width: 185px;
+    height: 266px;
+    position: relative; }
+    .floorTabRight ul li .booKimg {
+      height: 158px;
+      margin-top: 10px;
+      text-align: center; }
+      .floorTabRight ul li .booKimg a {
+        display: block; }
+      .floorTabRight ul li .booKimg img {
+        max-height: 158px;
+        max-width: 158px; }
+    .floorTabRight ul li .bookName {
+      width: 145px;
+      padding: 0 20px;
+      line-height: 18px;
+      height: 18px;
+      overflow: hidden;
+      margin-top: 15px; }
+      .floorTabRight ul li .bookName a {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+        text-decoration: none; }
+      .floorTabRight ul li .bookName a:hover {
+        color: #e60000; }
+    .floorTabRight ul li .bookAuthor {
+      margin-top: 4px;
+      color: #666;
+      width: 145px;
+      padding: 0 20px;
+      line-height: 18px;
+      height: 18px;
+      overflow: hidden; }
+    .floorTabRight ul li .priceWrap {
+      margin-top: 5px;
+      width: 145px;
+      padding: 0 20px;
+      overflow: hidden;
+      line-height: 16px; }
+      .floorTabRight ul li .priceWrap .salePrice {
+        float: left;
+        color: #e60000;
+        font-size: 15px;
+        font-family: "Microsoft YaHei"; }
+      .floorTabRight ul li .priceWrap .price {
+        line-height: 18px;
+        margin-left: 7px;
+        float: left;
+        color: #999999;
+        text-decoration-line: line-through; }
+
+.floorTabRight ul li .icon {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .floorTabRight ul li .icon img {
+    width: 100%; }
+
+.floorCon .floorRight {
+  width: 230px;
+  float: right; }
+
+.seriesBook ul {
+  border: 1px solid #e6e6e6;
+  border-bottom: none; }
+  .seriesBook ul li {
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    line-height: 0; }
+    .seriesBook ul li .img {
+      display: none; }
+    .seriesBook ul li .text {
+      display: block;
+      height: 32px;
+      line-height: 32px;
+      padding-left: 32px;
+      width: 185px;
+      overflow: hidden;
+      color: #333;
+      text-decoration: none; }
+    .seriesBook ul li span {
+      position: absolute;
+      font-size: 8px;
+      height: 32px;
+      line-height: 32px;
+      top: 0;
+      left: 13px;
+      line-height: 42px; }
+  .seriesBook ul li.cur .img {
+    display: block;
+    width: 228px;
+    height: 90px;
+    overflow: hidden; }
+  .seriesBook ul li.cur .text {
+    display: none; }
+  .seriesBook ul li.cur span {
+    display: none; }
+
+.floorSubImg {
+  margin-top: 20px; }
+
+#floor2 .floorTit h2 {
+  background: #b17f4a; }
+
+#floor2 .floorTit ul li.cur a {
+  border-top: 4px solid #b17f4a;
+  color: #b17f4a; }
+
+#floor2 .floorTabLeft .kindText {
+  background: #ffebd3; }
+  #floor2 .floorTabLeft .kindText h3 {
+    color: #b17f4a; }
+    #floor2 .floorTabLeft .kindText h3 a {
+      color: #b17f4a; }
+  #floor2 .floorTabLeft .kindText ul li a:hover {
+    color: #b17f4a; }
+  #floor2 .floorTabLeft .kindText ul li:hover span {
+    color: #b17f4a; }

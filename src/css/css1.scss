@@ -1,0 +1,38 @@
+/* 包邮区 */
+*{}
+.w1200 {
+    
+    width: 1200px; margin: auto; 
+}
+.baoyou {  }
+.baoyouTitle { overflow:hidden; background:#f5f5f5; position:relative;margin-top: 25px;}
+.baoyouTitle h2 { text-align:left;  float:left; height:58px; line-height:55px;  font-family:"Microsoft YaHei";  font-style:oblique; font-weight:normal;   }
+.baoyouTitle h2 a { color:#e60000; text-decoration:none; overflow:hidden;  font-size:22px; }
+.baoyouTitle h2 span { color:#333333;  margin-left:10px;font-size:18px; font-style:oblique; }
+.baoyouTitle .moreLink { height:58px; line-height:58px;text-align:right;  position:absolute; left:0; top:0; width:1180px; padding-right:20px; }
+.baoyouTitle .moreLink a { color:#666666; font-size:14px; display:block; height:58px; }
+
+.baoCon { margin-top:10px; position:relative; }
+.baoCon ul {overflow:hidden;background:#fff;border:1px solid #e6e6e6; position:relative; border-top:none; }
+.baoCon ul li {float:left;  border-top:3px solid #e6e6e6;  width:20%; height:223px; position:relative;  overflow:hidden;}
+.baoCon ul li .listWrap { border-right:1px solid #e6e6e6; overflow:hidden;height:223px; }
+.baoCon ul li:hover { border-top:3px solid #e60000; }
+.baoCon ul li:last-child .listWrap{ border-right:none; }
+.baoCon ul li p { line-height:24px; padding-left:13px; width:207px; white-space:nowrap; overflow:hidden; margin-top:12px; }
+.baoCon ul li p a { font-size:14px; font-family:"Microsoft YaHei"; text-decoration:none; }
+.baoCon ul li del { padding-left:13px; font-size:13px; font-family:"Microsoft YaHei"; color:#999; }
+.baoCon ul li .book_cover { position:absolute; height:158px; width:158px; right:1px; bottom:8px; text-align:center; z-index:1;  -webkit-transition: -webkit-transform .4s ease-out;
+transition: -webkit-transform .4s ease-out; -moz-transition: transform .4s ease-out,-moz-transform .4s ease-out; transition: transform .4s ease-out;transition: transform .4s ease-out,-webkit-transform .4s ease-out,-moz-transform .4s ease-out; }
+.baoCon ul li .book_cover:hover { -webkit-transform:translateX(-10px); -moz-transform:translateX(-10px); -ms-transform:translateX(-10px); transform:translateX(-10px)}
+.baoCon ul li .book_cover a { display:block; }
+.baoCon ul li .book_cover img { max-height:158px;  max-width:158px;  }
+.baoCon ul li .price { position:absolute; width:60px; height:60px; background:url(../imager/homeindex.png) no-repeat -1px -318px; top:64px; left:14px; z-index:2;text-align:center; }
+.baoCon ul li .price { display:block; font-size:22px; color:#fff; font-family:"Microsoft YaHei"; color:#fff; line-height:40px; }
+.baoCon ul li .price i { font-size:14px;  }
+
+
+.baoCon .arrow { position:absolute; width:27px; height:38px; top:50%; margin-top:-19px; cursor:pointer;  z-index:3; display:none; }
+.baoCon:hover .arrow { display:block; }
+.baoCon .leftArrow { left:2px; background:url(../imager/homeindex.png) no-repeat -73px -38px; background-color:#000; background-color:rgba(0,0,0,0.35);}
+.baoCon .rightArrow { right:2px; background:url(../imager/homeindex.png) no-repeat -73px 0px; background-color:#000; background-color:rgba(0,0,0,0.35);}
+.baoCon .arrow:hover { background-color:rgba(0,0,0,0.2);}
