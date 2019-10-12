@@ -42,6 +42,8 @@ function addData() {
       if (productList < 1) {
         window.location.reload();
       }
+
+      allPrice();
     };
   }
 }
@@ -85,6 +87,8 @@ function del() {
       if (productList < 1) {
         window.location.reload();
       }
+
+      allPrice();
     };
   }
 }
@@ -106,6 +110,8 @@ function changeNum() {
           return;
         }
       }
+
+      allPrice();
     };
 
     cutBtn[i].onclick = function () {
@@ -130,6 +136,8 @@ function changeNum() {
         }
       }
     };
+
+    allPrice();
   }
 }
 
@@ -153,3 +161,18 @@ function carStyle() {
 }
 
 carStyle();
+
+function allPrice() {
+  var subtotal = document.querySelectorAll(".subtotal");
+  var zongjia = document.querySelector("#J_SumZongJia");
+  var J_SumCount = document.querySelector("#J_SumCount");
+  var num = getS().length;
+  var allPrice = 0;
+
+  for (var i = 0; i < subtotal.length; i++) {
+    allPrice += Number(subtotal[i].innerHTML.substr(1));
+  }
+
+  zongjia.innerHTML = allPrice;
+  J_SumCount.innerHTML = num;
+}
